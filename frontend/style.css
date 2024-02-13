@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background: #fff;
+    overflow-x: hidden;
+}
+.content main .insights{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 24px;
+    margin-top: 36px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content main .insights li{
+    padding: 24px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+    cursor: pointer;
+}
+/* .content main .insights li .bx{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.insights li:nth-child(1){
+    background: #CFE8FF;
+    color: #1976D2;
+}
+
+.insights li:nth-child(2){
+    background: #FFF2C6;
+    color: #FBC02D;
+}
+
+.insights li:nth-child(3){
+    background: #FECDD3;
+    color: #D32F2F;
+}
+
+.insights li:nth-child(4){
+    background: #BBF7D0;
+    color: #388E3C;
+}
+.insights li .info h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #363949;
+}
+
+.insights li .info p{
+    color: #363949;
+}
+
+
+.bottom-data{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 24px;
+    margin-top: 24px;
+    width: 98.5%;
+    color: #363949;
+    margin-left: 10px;
+}
+
+.bottom-data>div{
+    border-radius: 20px;
+    background: #f6f6f9;
+    padding: 24px;
+    overflow-x: auto;
+}
+.bottom-data .header{
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+    margin-bottom: 24px;
+}
+
+.bottom-data .header h3{
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.bottom-data .header .bx{
+    cursor: pointer;
+}
+
+.bottom-data .companyList{
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+.bottom-data .companyList table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bottom-data .companyList table th{
+    padding-bottom: 12px;
+    font-size: 13px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.bottom-data .companyList table td{
+    padding: 16px 0;
+}
+
+.bottom-data .companyList table tr td:first-child{
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+    padding-left: 6px;
+}
+
+.bottom-data .companyList table td img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bottom-data .companyList table tbody tr{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bottom-data .companyList table tbody tr:hover{
+    background: #eee;
+}
+
+.bottom-data .companyList table tr td .status{
+    font-size: 10px;
+    padding: 6px 16px;
+    color: #f6f6f9;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.bottom-data .companyList table tr td .status.accepted{
+    background: #388E3C;
+}
+
+.bottom-data .companyList table tr td .status.applied{
+    background: #1976D2;
+}
+
+.bottom-data .companyList table tr td .status.under_review{
+    background: #FBC02D;
+}
